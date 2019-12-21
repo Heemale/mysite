@@ -1,0 +1,20 @@
+<a href="{% url 'home' %}">主页</a>
+
+<h1>这里有{{count}}个词</h1>
+
+<!-- <h1><a href="http://baidu.com">baidu</a></h1> -->
+
+
+<h1>your text:</h1>
+{{fulltext}}
+
+<h1>word count:</h1>
+<!-- {{worddictionary}} -->
+{% for word, counttotal in sortedwords %}
+
+{{word}} --> {{counttotal}}
+<br />
+<!-- {{ counttotal }}
+<br /> -->
+
+{%endfor%}
